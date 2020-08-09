@@ -1,2 +1,2 @@
-fastapi=0.60.2
-uvicorn=0.11.8
+fastapi==0.60.2
+uvicorn==0.11.8
