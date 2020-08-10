@@ -101,4 +101,9 @@ MESSAGES = ["*Rough starts are normal at Qxf2*\n If you are feeling 'not good \
             things you do well. If you fail at a specific task because you\
             chose something new, it will be ok because nobody is expected to be\
             good at everything. A mixed bag of performance has tremendous\
-            upside for Qxf2 and your own career."]
+            upside for Qxf2 and your own career.",
+            "*One of the great challenges of the game is how to make progress\
+            when there are no obvious moves, when action is required not \
+            reaction. - Gary Kasparov* This is true not only in chess but in\
+            our careers as well. When things are going smooth, we seem to want\
+            to coast. It's ok to coast for a while, especially after a hectic release. But over the long term, make sure your are exploring new problems regularly."]
