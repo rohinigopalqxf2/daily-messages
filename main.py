@@ -19,4 +19,4 @@ def get_message():
     message = random.choice(culture.MESSAGES)
     message = ' '.join(message.split())
 
-    return message
+    return {'msg':message}
