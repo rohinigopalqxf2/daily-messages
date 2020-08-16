@@ -2,20 +2,20 @@
 Messages about Qxf2 culture
 '''
 
-MESSAGES = ['*Rough starts are normal at Qxf2*\n If you are feeling \'not good \
+MESSAGES = ['<b>Rough starts are normal at Qxf2</b><br> If you are feeling \'not good \
             enough\', remind yourself that most employees have rough starts \
             at Qxf2. After all, you are transitioning into a very different \
             way of working that requires you to change, learn and unlearn many\
             things. You should also know that it gets better over time and\
             sometimes even fun(!) when you get used to our system of working.',
-            '*How to succeed in your first few weeks with Qxf2*\n The traits \
+            '<b>How to succeed in your first few weeks with Qxf2</b><br> The traits \
             that will let you successfully navigate the initial phase with Qxf2\
             do not require talent. Key traits among the successful Qxf2 \
             employees were: \n>a) showing up daily (well, virtually)\n>b) being\
             open about their difficulties at work  \n>c) being willing to\
             change their habits. \n So, keep trying every day, be open about\
             your difficulties and be willing to change.',
-            '*How are you judging me?*\n We will not judge you based on your\
+            '<b>How are you judging me?</b><br> We will not judge you based on your\
             knowledge or achievements at this stage of your relationship with\
             Qxf2. Why? Because you are transitioning from one system of work\
             into another. That means you need to unlearn, learn and piece\
@@ -23,13 +23,13 @@ MESSAGES = ['*Rough starts are normal at Qxf2*\n If you are feeling \'not good \
             judging you based on your effort, the openness that you show in\
             asking for help and your ability to adapt. Do that and you will\
             find things will work out over well the coming months.',
-            '*It\'s not only you*\n Many new hires think they are the only ones\
+            '<b>It\'s not only you</b><br> Many new hires think they are the only ones\
             struggling to get a handle on their work while everyone else has\
             figured it out. Not really. The rest of us look comfortable only\
             because we have made peace with high levels of ambiguity and\
             complexity. At some point, you are going to realize that each of us\
             are on our own journey of learning, unlearning, doing and failing.',
-            '* Failure despite effort*\n Qxf2 is a stressful environment until\
+            '<b>Failure despite effort</b><br> Qxf2 is a stressful environment until\
             you learn multiple new habits and the compounding effect of those\
             habits kick in. Until then, you are going to repeatedly fail\
             despite trying hard. We know failing repeatedly over a long enough\
@@ -39,7 +39,7 @@ MESSAGES = ['*Rough starts are normal at Qxf2*\n If you are feeling \'not good \
             non-punitive as possible. We are also very receptive to hearing\
             about your failures. So feel safe to try your best and come up\
             short.',
-            '*Adaptive vs Technical challenges*\n Technical challenges can be\
+            '<b>Adaptive vs Technical challenges</b><br> Technical challenges can be\
             solved by knowledge and training. But there are some challenges\
             that evolve as you solve them. These are adaptive challenges.\
             Parenting is probably is the most relatable example of an adaptive\
@@ -50,15 +50,15 @@ MESSAGES = ['*Rough starts are normal at Qxf2*\n If you are feeling \'not good \
             you just execute the tasks given to you. You need to periodically\
             introspect and evaluate if the work is changing your habits,\
             mindset and perspective.',
-            '*A tip for your first year*\n I have a simple tip that will make\
+            '<b>A tip for your first year</b><br> I have a simple tip that will make\
             your first year at Qxf2 so much easier. Stop asking \'what is the\
             use of doing X?\' and just do X. It\'s ok if nobody else you know\
             outside of Qxf2 is doing X. Over time, you will notice that doing X\
             had multiple benefits that neither you nor me could have predicted\
             (called \'emergent behavior\' in a complex system) and that you will\
             be better off for having tried.',
-            '*We shape our buildings, thereafter they shape us. ― Winston\
-            Churchill*\n Early employees are expected to actively contribute\
+            '<b>We shape our buildings, thereafter they shape us. ― Winston\
+            Churchill</b><br> Early employees are expected to actively contribute\
             to company design. I usually describe this task as \'help me build\
             the company\' during interviews. Understandably, for most people,\
             this is a little too vague. But as early employees, hopefully, you\
@@ -66,7 +66,7 @@ MESSAGES = ['*Rough starts are normal at Qxf2*\n If you are feeling \'not good \
             time - either consciously or by default. I find this topic\
             fascinating and I suspect if you spent some time Googling about it,\
             you would too!',
-            '*Bad beginnings*\n Our schooling did a great job of instilling the\
+            '<b>Bad beginnings</b><br> Our schooling did a great job of instilling the\
             values of hardwork, discipline, logical thinking and holding\
             ourselves to high standards. I wish they had taken the time to\
             explain that those characteristics are good in most context but not\
@@ -75,7 +75,7 @@ MESSAGES = ['*Rough starts are normal at Qxf2*\n If you are feeling \'not good \
             bias though. The next time you start something new, remind yourself\
             that it is natural to struggle and be clueless when doing new\
             things.',
-            '*There is no happily after*\n As you progress within Qxf2,\
+            '<b>There is no happily after</b><br> As you progress within Qxf2,\
             hopefully, you are adding new technqiues and capabilities to your\
             testing toolbelt. If you have worked elsewhere before, you might\
             even start wondering what the \'happily after\' scenario is going to\
@@ -86,7 +86,7 @@ MESSAGES = ['*Rough starts are normal at Qxf2*\n If you are feeling \'not good \
             easy after that. Instead of adopting this (imo) poor mental model,\
             just view learning as a side-effect of solving problems and don\'t\
             really worry about where all this is going to culminate.',
-            '*What is a good failure?*\n As of Jun 2020, I think a good failure\
+            '<b>What is a good failure?</b><br> As of Jun 2020, I think a good failure\
             has four components. One, the person/people working made a sincere\
             effort to do what they can and then looked foolish/incompetent.\
             Two, the failure leads to situational insights, mindset\
@@ -94,7 +94,7 @@ MESSAGES = ['*Rough starts are normal at Qxf2*\n If you are feeling \'not good \
             more than one problem within Qxf2 ... not just improvements of the\
             individual(s) involved. Four, there is an appetite to right the\
             failure.',
-            '*Mixed bag is not the same as mediocre*\n A mixed bag has high-highs\
+            '<b>Mixed bag is not the same as mediocre</b><br> A mixed bag has high-highs\
             and low-lows. Mediocre performance is when you are average all\
             through - you neither impress nor annoy. When I say it is ok to\
             fail at clients, I am implicitly assuming there are already some\
@@ -102,8 +102,8 @@ MESSAGES = ['*Rough starts are normal at Qxf2*\n If you are feeling \'not good \
             chose something new, it will be ok because nobody is expected to be\
             good at everything. A mixed bag of performance has tremendous\
             upside for Qxf2 and your own career.',
-            '*One of the great challenges of the game is how to make progress\
+            '<b>One of the great challenges of the game is how to make progress\
             when there are no obvious moves, when action is required not \
-            reaction. - Gary Kasparov* This is true not only in chess but in\
+            reaction. - Gary Kasparov</b><br> This is true not only in chess but in\
             our careers as well. When things are going smooth, we seem to want\
             to coast. It\'s ok to coast for a while, especially after a hectic release. But over the long term, make sure your are exploring new problems regularly.']
