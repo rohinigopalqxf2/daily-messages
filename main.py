@@ -1,11 +1,13 @@
 """
 Endpoints for reminders and daily messages
 """
+import os
 import random
 from fastapi import FastAPI
-from messages import culture
-
 app = FastAPI()
+
+CURR_FILE_PATH = os.path.dirname(os.path.abspath(__file__))
+MESSAGES_PATH = os.path.join(CURR_FILE_PATH, 'messages')
 
 @app.get("/")
 def index():
@@ -16,7 +18,9 @@ def index():
 @app.get("/message")
 def get_message():
     "Return a random message"
-    message = random.choice(culture.MESSAGES)
-    message = ' '.join(message.split())
+    culture_file = os.path.join(MESSAGES_PATH, 'culture.txt')
+    with open(culture_file, 'r') as fp:
+        lines = fp.readlines()
+    message = random.choice(lines)
 
-    return {'msg':message}
+    return {'msg':message.strip()}
