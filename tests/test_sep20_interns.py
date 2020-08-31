@@ -1,5 +1,5 @@
 """
-Code level tests for messages endpoint
+Tests for the Sep 20 interns messages endpoint
 """
 import os
 from unittest.mock import Mock, patch
@@ -13,19 +13,19 @@ def test_message_selection(mock_obj):
     test_msg_2 = "Hello! This is unit test message 2!"
     expected_messages = [test_msg_1, test_msg_2]
     mock_obj.return_value = expected_messages
-    message = main.get_message()
+    message = main.get_sep20_message()
     assert message.get('msg','') in expected_messages
     print("/message is selecting the right message")
 
 def test_message_file_exists():
     "Test the message file exists"
-    assert os.path.exists(main.CULTURE_FILE)
+    assert os.path.exists(main.SEP20_INTERNS_FILE)
     print("Culture file exists")
 
 def test_message_content_matches():
     "Test that the selected message is in the culture file"
-    with open(main.CULTURE_FILE, 'r') as file_handler:
+    with open(main.SEP20_INTERNS_FILE, 'r') as file_handler:
         lines = [line.strip() for line in file_handler]
-    message = main.get_message()
+    message = main.get_sep20_message()
     assert message['msg'] in lines
     print("Found message selected by /message in culture file")

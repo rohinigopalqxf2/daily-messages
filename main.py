@@ -11,15 +11,16 @@ app = FastAPI()
 CURR_FILE_PATH = os.path.dirname(os.path.abspath(__file__))
 MESSAGES_PATH = os.path.join(CURR_FILE_PATH, 'messages')
 CULTURE_FILE = os.path.join(MESSAGES_PATH, 'culture.txt')
+SEP20_INTERNS_FILE = os.path.join(MESSAGES_PATH, 'sep20_interns.txt')
 
 def get_weekday():
     "Return the weekday"
     return datetime.datetime.today().weekday()
 
-def get_culture_messages():
+def get_messages_from_file(filename):
     "Return a list of culture related messages"
     lines = []
-    with open(CULTURE_FILE, 'r') as fp:
+    with open(filename, 'r') as fp:
         lines = fp.readlines()
 
     return lines
@@ -33,7 +34,7 @@ def index():
 @app.get("/message")
 def get_message():
     "Return a random message"
-    lines = get_culture_messages()
+    lines = get_messages_from_file(CULTURE_FILE)
     message = random.choice(lines)
 
     return {'msg':message.strip()}
@@ -47,3 +48,10 @@ def get_reminder():
     message = "<b>Reminder:</b> " + random.choice(lines)
 
     return {'msg':message.strip()}
+
+@app.get("/sep20-interns")
+def get_sep20_message():
+    "Return a message for the Sep 2020 internship"
+    lines = get_messages_from_file(SEP20_INTERNS_FILE)
+
+    return {'msg': random.choice(lines).strip()}
