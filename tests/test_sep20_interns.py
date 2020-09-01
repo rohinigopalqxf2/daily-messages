@@ -2,7 +2,7 @@
 Tests for the Sep 20 interns messages endpoint
 """
 import os
-from unittest.mock import Mock, patch
+from unittest.mock import patch
 import main
 
 @patch('main.get_messages_from_file')
@@ -14,7 +14,7 @@ def test_message_selection(mock_obj):
     expected_messages = [test_msg_1, test_msg_2]
     mock_obj.return_value = expected_messages
     message = main.get_sep20_message()
-    assert message.get('msg','') in expected_messages
+    assert message.get('msg', '') in expected_messages
     print("/message is selecting the right message")
 
 def test_message_file_exists():
