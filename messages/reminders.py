@@ -7,7 +7,8 @@ monday_msg = ["I hope you planned this week on Friday evening itself. If not, pl
 "How does your work week look? If you have not, list your action items and approximately when you think they will be tackled. Just doing this regularly will help you manage your time better.",
 "Please make an effort to manage your time well. Plan your week, be punctual, finish meetings on time and use the calendar well. These are important habits to cultivate a respectful environment.",
 "Make it a goal to avoid scheduling same-day-meetings. Those should be reserved for real emergencies. At the start of the week, make sure your have already scheduled all that you know is going to happen on your calendar.",
-"Did the previous week play out close to how you planned it? React with either a thumbs up or thumbs down."]
+"Did the previous week play out close to how you planned it? React with either a thumbs up or thumbs down.",
+"Your poor planning should not become someone elses emergency. Please take a few minutes to plan your week and schedule all the events that you might need!"]
 tuesday_msg = ["Your Friday demos can be of work you did at a client in the past too! If you feel something you did in the past is interesting, please share!",
 "You can request your colleagues to demo something you know they have done? Just make sure to give them at least a week of prior notice.",
 "Think of what you want to demo on the sprint call. Work towards it in terms of visual milestones. That way, at all points you will have a working demo. Even if you don't complete your task, you can demo <i>something  at least!</i>",
@@ -23,7 +24,8 @@ tuesday_msg = ["Your Friday demos can be of work you did at a client in the past
 "For technical communication, please do not use any medium other than the ones listed here https://docs.google.com/presentation/d/1mQO7Hs45XMbmX6v5pP0V2027bqtpuN888sW8G2aEziM/edit#slide=id.g6f50f09311_0_63. No using SMS, Whatsapp, etc.",
 "Passwords should never be put in version control. Please remember to add the file to .gitignore and add a sentence or two in the readme of your repo on how to get setup.",
 "You can look at tickets of closed Trello board by searching for <b>board:number</b> in the ticket search field. For example, to see what ticket we tackled in our very first sprint, search for <i>board:0001</i>",
-"Keep your inbox as close to zero as possible. It will reduce the chances of missing important information. Tips available here: https://trello.com/c/eZHBXygi/23-tuesday-1400-good-gmail-habits"]
+"Keep your inbox as close to zero as possible. It will reduce the chances of missing important information. Tips available here: https://trello.com/c/eZHBXygi/23-tuesday-1400-good-gmail-habits",
+"You are expected to work 8 (or 9) hours a day. If you are frequently working more than that, please improve your planning and expectation setting. If you do not know how, please talk with your 1:1 manager."]
 wednesday_msg = ["As you go about this week, be on the lookout for how you can help a colleague get better. The help does not have to be substantial or life-changing or even correct! Just your attempt to help someone who is stuck will make Qxf2 suck a little less.",
 "You should pay attention to the work of your colleagues, at least at a high level. Read through Trello and Jira once or twice a week even if you are working on a client. Be curious about what your colleagues do at clients even if you are on R&D.",
 "1:1 sessions with your manager are supposed to be driven by the direct report. Your 1:1 manager should NOT be talking about technical work unless you bring it up. You should not be going to the meeting to report status. Instead, the sessions are to help you with your career. You can ask them for help on anything except technical problems. For technical problems, please post on the group channel.",
@@ -33,7 +35,8 @@ wednesday_msg = ["As you go about this week, be on the lookout for how you can h
 "The habits we stress at Qxf2 should continue at a client too. You should not suddenly go back to your old way of working when you are on a client!",
 "Early employees should get into the habit of asking for more responsibility! A growing bootstrapped company can afford to create all sorts of weird roles and one off opportunities.",
 "Please let work suffer if it is not being done in a fair way. Do NOT make it a habit to over-compensate for the weak links in your team. Instead, let the delivery fail and let the company fix the deeper issues (e.g.: poor hiring).",
-"As an early employee, when dealing with new hires, please attribute good intentions. New folks want to do well at their job but may not yet have enough context within Qxf2 to do well."]
+"As an early employee, when dealing with new hires, please attribute good intentions. New folks want to do well at their job but may not yet have enough context within Qxf2 to do well.",
+"We work on early stage products with small engineering teams. That means decisions around staffing, tooling, process, speed and stability are different from what you are used to. Please make an effort to think through the ramifications of what these mean. If you are not sure, please discuss with your 1:1 manager and/or your other colleagues."]
 thursday_msg = ["Make an effort to share what you learn. Almost all the material on the Internet that you use to unblock yourself was created by busy professionals like you. So, once in a while, take a pause from consuming all that good stuff and try to share your own learnings",
 "You are expected to share what you know on our blog. If you feel unqualified, remember that technical expertise is a spectrum. There is always someone who will find your perspective useful.",
 "You can share personal stuff that you are excited about on the etc,etc,etc channel. You are not disturbing anyone or being noisy or anything like that. The channel exists so you can share such stuff.",
