@@ -3,15 +3,43 @@ Endpoints for reminders and daily messages
 """
 import datetime
 import os
+import pickle
 import random
 from fastapi import FastAPI
 from messages import reminders
+from messages import senior_qa_training
 app = FastAPI()
 
 CURR_FILE_PATH = os.path.dirname(os.path.abspath(__file__))
 MESSAGES_PATH = os.path.join(CURR_FILE_PATH, 'messages')
 CULTURE_FILE = os.path.join(MESSAGES_PATH, 'culture.txt')
 SEP20_INTERNS_FILE = os.path.join(MESSAGES_PATH, 'sep20_interns.txt')
+SENIOR_QA_TRAINING_PICKLE = os.path.join(MESSAGES_PATH, 'senior_qa_training.pickle')
+
+def get_pickle_contents(filename):
+    "Return the first variable of a pickle file"
+    contents = None
+    if os.path.exists(filename):
+        with open(filename, 'rb') as file_handler:
+            contents = pickle.load(file_handler)
+
+    return contents
+
+def update_pickle_contents(filename, content):
+    "Update the contents of the pickle file"
+    with open(filename, 'wb+') as file_handler:
+        pickle.dump(content, file_handler)
+
+def get_senior_qa_training_user_index():
+    "Return the user index dict"
+    user_index_dict = get_pickle_contents(SENIOR_QA_TRAINING_PICKLE)
+    user_index_dict = {} if user_index_dict is None else user_index_dict
+
+    return user_index_dict
+
+def set_senior_qa_training_user_index(user_index_dict):
+    "Update the user index for the senior QA training messages"
+    update_pickle_contents(SENIOR_QA_TRAINING_PICKLE, user_index_dict)
 
 def get_weekday():
     "Return the weekday"
@@ -20,8 +48,8 @@ def get_weekday():
 def get_messages_from_file(filename):
     "Return a list of culture related messages"
     lines = []
-    with open(filename, 'r') as fp:
-        lines = fp.readlines()
+    with open(filename, 'r') as file_handler:
+        lines = file_handler.readlines()
 
     return lines
 
@@ -55,3 +83,19 @@ def get_sep20_message():
     lines = get_messages_from_file(SEP20_INTERNS_FILE)
 
     return {'msg': random.choice(lines).strip()}
+
+@app.get("/training")
+def get_snior_qa_training_message(user: str = ''):
+    "Return a message for senior QA training"
+    lines = senior_qa_training.messages
+    user_index_dict = {}
+    if user:
+        user_index_dict = get_senior_qa_training_user_index()
+        message_index = user_index_dict.get(user, 0)
+        message = lines[message_index%len(lines)]
+        user_index_dict[user] = message_index + 1
+        set_senior_qa_training_user_index(user_index_dict)
+    else:
+        message = random.choice(lines).strip()
+
+    return {'msg': message}
